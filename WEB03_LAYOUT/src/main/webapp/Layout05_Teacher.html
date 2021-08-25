@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Layout05</title>
+		
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			.img1{
+				width:200px; height:200px;
+				border-radius: 100%;
+			}
+			.setLocation{
+				position: absolute;
+  				left: 50%;
+  				transform: translateX(-50%);
+  				/*position: relative;
+  				margin:0 auto;*/
+			}
+			.setfont{
+				font-size:200%;
+				font-weight: bold;
+				text-align:center;
+				font-family: 'Oswald', sans-serif;
+			}
+			#first{
+				width:100%; height:200px;
+			}
+			#second{
+				width:100%; height:200px;
+				background-color:#FFF8DC;
+			}
+			#third{
+				width:100%; height:200px;
+				background-color:#DCFFF8;
+			}
+			#area1{
+				width:20%; height:200px;
+				border: 1px solid blue;
+				overflow: hidden;
+			}
+			#box1{
+				width: 100%; height:50%;
+				border: 1px solid blue;
+				line-height:100px;
+			}
+			#box2{
+				width: 100%; height:50%;
+				border: 1px solid blue;
+			}
+			#area2{
+				position:relative;
+				width: 1100px;
+				height: 200px;
+				background-color: orange;
+				overflow: hidden;
+			}
+			#area3{
+				width: 1100px;
+				height: 200px;
+				background-color: skyblue;
+			}
+			#box3{
+				position:relative;
+				float:left;
+				margin-right:100px;
+			}
+			#box4{
+				position:relative;
+				float:left;
+				margin-right:100px;
+			}
+			#box5{
+				position:relative;
+				float:left;
+				margin-right:100px;
+			}
+			#box6{
+				position:relative;
+				float:left;
+			}
+			#area3_sub1{
+				width:100%; height:70px;
+				background-color: skyblue;
+			}
+			.sub1box{
+				width:198px; height:100%;
+				line-height: 70px;
+				font-size: 150%;
+				border: 1px solid blue;
+			}
+			#area3_sub2{
+				width:100%; height:130px;
+				background-color: pink;
+			}
+			.sub2box{
+				width:198px; height:100%;
+				font-size:70%;
+				border: 1px solid purple;
+			}
+			#box7{
+				position:relative;
+				float:left;
+				margin-right:100px;
+			}
+			#box8{
+				position:relative;
+				float:left;
+				margin-right:100px;
+			}
+			#box9{
+				position:relative;
+				float:left;
+				margin-right:100px;
+			}
+			#box10{
+				position:relative;
+				float:left;
+			}
+		</style>
+	</head>
+	<body>
+		<div id= "first">
+			<div id="area1" class="setLocation">
+				<div id="box1" class="setfont">Content Title01</div>
+				<div id="box2">비상계엄하의 군사재판은 군인.군무원의 범죄나 군사에 관한 간첩죄의
+					경우와 초병.초소.유독음식물공급.포로에 관한 좌중 법률이 정한 경우에 한하여 단심으로
+					할 수 있다.</div>
+			</div>
+		</div>
+		<div id= "second">
+			<div id="area2" class="setLocation">
+				<div id="box3">
+					<img class="img1" src="images/1.jpg">
+				</div>
+				<div id="box4">
+					<img class="img1" src="images/2.jpg">
+				</div>
+				<div id="box5">
+					<img class="img1" src="images/3.jpg">
+				</div>
+				<div id="box6">
+					<img class="img1" src="images/4.jpg">
+				</div>
+			</div>
+		</div>
+		<div id= "third">
+			<div id="area3" class="setLocation">
+				<div id="area3_sub1">
+					<div id="box3" class="sub1box setfont">Segment Title</div>
+					<div id="box4" class="sub1box setfont">Segment Title</div>
+					<div id="box5" class="sub1box setfont">Segment Title</div>
+					<div id="box6" class="sub1box setfont">Segment Title</div>
+				</div>
+				<div id="area3_sub2">
+					<div id="box7" class="sub2box setfont">비상계엄하의 군사재판은 군인.군무원의 범죄나 군사에 관한 간첩죄의
+						경우와 초병.초소.유독음식물공급.포로에 관한 좌중 법률이 정한 경우에 한하여 단심으로
+						할 수 있다. <br><br>
+						<img src="images/content01.jpg">
+					</div>
+					<div id="box8" class="sub2box setfont">비상계엄하의 군사재판은 군인.군무원의 범죄나 군사에 관한 간첩죄의
+						경우와 초병.초소.유독음식물공급.포로에 관한 좌중 법률이 정한 경우에 한하여 단심으로
+						할 수 있다.<br><br>
+						<img src="images/content01.jpg">
+					</div>
+					<div id="box9" class="sub2box setfont">비상계엄하의 군사재판은 군인.군무원의 범죄나 군사에 관한 간첩죄의
+						경우와 초병.초소.유독음식물공급.포로에 관한 좌중 법률이 정한 경우에 한하여 단심으로
+						할 수 있다.<br><br>
+						<img src="images/content01.jpg">
+					</div>
+					<div id="box10" class="sub2box setfont">비상계엄하의 군사재판은 군인.군무원의 범죄나 군사에 관한 간첩죄의
+						경우와 초병.초소.유독음식물공급.포로에 관한 좌중 법률이 정한 경우에 한하여 단심으로
+						할 수 있다.<br><br>
+						<img src="images/content01.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
