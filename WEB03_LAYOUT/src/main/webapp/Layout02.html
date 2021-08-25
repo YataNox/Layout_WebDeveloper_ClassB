@@ -2,26 +2,29 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Layout01</title>
+		<title>Layout02</title>
 		<style type="text/css">
-			body{margin:0px;}
+			body{
+				margin:0px; padding:0px;
+			}
 			.base{
 				position:relative;
 				width:100%; height: 500px;
 				border:1px dotted black;
-				margin-top:100px;
+				top:100px;
 			}
 			.box1{
-				position:absolute; width:50%; height:500px;
+				position:relative; width:50%; height:500px;
 				background:yellow; 
-				top:0px;/*  left:0px; */ right:50%;
 				border:1px solid green;
+				float: left;
 			}
 			.box2{
-				position:absolute; width:50%; height:400px;
+				position:relative; width:50%; height:400px;
 				background:orange; 
-				/* top:50px; right:0px; */ bottom:50px; right:50px;
-				border:1px solid red;;
+				border:1px solid red;
+				float: left;
+				top: 50px; left:-50px;
 			}
 		</style>
 	</head>
