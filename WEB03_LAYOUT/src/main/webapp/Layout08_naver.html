@@ -2,27 +2,26 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Layout08_naver</title>
+		<title>네이버: 회원가입</title>
 		<style type="text/css">
 			*{
 				margin:0;
 				padding:0;
 			}
 			html, body{
-				width: 100%; height:100%;
+				width: 100%; height:200%;
+				background-color: #F5F5F5;
 			}
 			
 			#mainView{
 				position:relative;
 				margin:0 auto;
 				width: 450px; height:100%;
-				border:1px solid black;
 			}
 			
 			#mainLogo{
 				position:relative;
 				width:100%; height:120px;
-				border:1px solid black;
 			}
 			#Logo{
 				position:absolute;
@@ -32,30 +31,233 @@
 			}
 			.divArea{
 				width:100%; height:100px;
-				border: 1px solid black;
 			}
+			.lastdivArea{
+				width:100%; height:280px;
+			}
+			
 			.textdiv{
 				position:relative;
 				width:100%; height:40px;
 				font-weight: bold;
 				font-size:90%;
-				
+				line-height: 50px;
+			}
+			.inputdiv{
+				position:relative;
+				width:100%; height:60px;
+				border: 1px solid #dadada;
+			}
+			input:focus{
+				outline: 1px solid lime;
+			}
+			input[type=button]{
+				width: 112px; height:100%;
+				font-size: 15px;
+				color:white;
+				background-color:#2DB400;
+				text-align: center;
+				margin-left:5px;
+				border: 1px solid #dadada;
+			}
+			.inputStyle{
+				padding-left:10px;
+				width:440px; height:60px;
+				border: 0px;
+				font-size: 15px;
+			}
+			.IDinputStyle{
+				padding-left:10px;
+				width:70%; height:59px;
+				border: 0px;
+				font-size: 15px;
+			}
+			.IDinputStyle:focus{
+				outline: none;
+			}
+			#email{
+				font-size: 120%;
+				color: gray;
+			}
+			.YinputStyle{
+				width:136px; height:59px;
+				border: 0px;
+				font-size: 15px;
+				padding-left:10px;
+				margin-right:1%;
+			}
+			#lastYinput{
+				margin-right:0%;
+			}
+			select:focus{
+				outline: 1px solid lime;
+			}
+			.Spanline1{
+				width: 30%;
+			}
+			.sinputStyle{
+				padding-left:10px;
+				width:450px; height:60px;
+				border: 0px;
+				font-size: 15px;
+			}
+			#checknum{
+				background-color: #F5F5F5;
+			}
+			.subbtn{
+				width:100%; height:60px;
+				font-size: 20px;
+				font-weight: bold;
+				color:white;
+				background-color: #2DB400;
+				border: 1px solid #dadada;
 			}
 		</style>
 	</head>
+	<!-- **************************************************** -->
 	<body>
 		<div id="mainView">
 			<div id="mainLogo">
 				<img id="Logo" src="images/naver_logo.png">
 			</div>
-			<div class="divArea">
-				<div class="textdiv">
-					아이디
+			<!-- **************************************************** -->
+			<form action="">
+				<div class="divArea">
+					<div class="textdiv">
+						아이디
+					</div>
+					<div class="inputdiv">
+						<input class="IDinputStyle" type="text" name="ID">
+						<span id="email">@naver.com</span>
+					</div>
 				</div>
-				<div class="inputdiv">
-					<input type="text" name="ID">
+				<!-- **************************************************** -->
+				<div class="divArea">
+					<div class="textdiv">
+						비밀번호
+					</div>
+					<div class="inputdiv">
+						<input class="inputStyle" type="password" name="PW">
+					</div>
 				</div>
-			</div>
-		</div>
+				<!-- **************************************************** -->
+				<div class="divArea">
+					<div class="textdiv">
+						비밀번호 재확인
+					</div>
+					<div class="inputdiv">
+						<input class="inputStyle" type="password" name="PW2">
+					</div>
+				</div>
+				
+				<br>
+				
+				<!-- **************************************************** -->
+				<div class="divArea">
+					<div class="textdiv">
+						이름
+					</div>
+					<div class="inputdiv">
+						<input class="inputStyle" type="text" name="NAME">
+					</div>
+				</div>
+				<!-- **************************************************** -->
+				<div class="divArea">
+					<div class="textdiv">
+						생년월일
+					</div>
+					<div class="inputdiv">
+						<span class="Spanline1">
+							<input class="YinputStyle" type="text" name="Year" placeholder="년(4자)">
+						</span>
+						<span class="Spanline1">
+							<select class="YinputStyle" name="month">
+								<option value="0">월</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>							
+							</select>
+						</span>
+						<span class="Spanline1">
+							<input id="lastYinput"class="YinputStyle" type="text" name="Day" placeholder="일">
+						</span>
+					</div>
+				</div>
+				<!-- **************************************************** -->
+				<div class="divArea">
+					<div class="textdiv">
+						성별
+					</div>
+					<div class="inputdiv">
+						<select class="sinputStyle" name="Gender">
+								<option value="0">성별</option>
+								<option value="1">남자</option>
+								<option value="2">여자</option>
+								<option value="3">선택안함</option>
+						</select>
+					</div>
+				</div>
+				
+				<!-- **************************************************** -->
+				<div class="divArea">
+					<div class="textdiv">
+						본인확인 이메일<small style="color:gray;">(선택)</small>
+					</div>
+					<div class="inputdiv">
+						<input class="inputStyle" type="text" name="e-mail" placeholder="선택입력">
+					</div>
+				</div>
+				
+				<br>
+				<!-- **************************************************** -->
+				
+				<div class="lastdivArea">
+					<div class="textdiv">
+						휴대전화
+					</div>
+					<div class="inputdiv">
+						<select class="sinputStyle" name="Gender">
+								<option value="1">그리스 +30</option>
+								<option value="2">네덜란드 +31</option>
+								<option value="3" selected="selected">대한민국 +82</option>
+								<option value="4">러시아/카자흐스탄 +4</option>
+								<option value="5">멕시코 +52</option>
+								<option value="6">베트남 +84</option>
+								<option value="7">스위스 +41</option>
+								<option value="8">인도 +91</option>
+								<option value="9">중국 +86</option>
+								<option value="10">칠레 +56</option>
+						</select>
+					</div>
+					<br>
+					
+					<div class="inputdiv">
+						<input class="IDinputStyle" type="text" name="ID" placeholder="전화번호 입력">
+						<span id="email">
+							<input type="button" value="인증번호 받기"> 
+						</span>
+					</div>
+					<br>
+					
+					<div class="inputdiv">
+						<input id="checknum" class="inputStyle" type="text" name="checknum"
+						placeholder="인증번호 입력하세요" disabled="disabled">
+					</div>
+				</div>
+				
+				<!-- **************************************************** -->
+				<br>
+				<input class="subbtn" type="submit" name="signup" value="가입하기">
+			</form>
+		</div>	
 	</body>
 </html>
