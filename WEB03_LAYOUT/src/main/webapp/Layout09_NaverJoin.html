@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Naver Join</title>
+		<style type="text/css">
+			#logo{
+				position:relative; width:460px; height:120px; 
+				margin:0 auto;
+				line-height: 150px;
+				text-align: center;
+				border: 1px dashed black;
+			}
+			/* 로고 끝 ----------------------------------------------------------------- */
+			.input_title{
+				position:relative; margin:0 auto; width:460px; height:40px;
+				line-height: 50px; font-weight:bold; border: 1px dashed blue; 
+			}
+			.input_text{
+				position:relative; margin:0 auto; width:460px; height:60px; color:gray;
+				border: 1px solid silver; background-color: white;
+				line-height: 60px;
+			}
+			.id1{
+				font-size:110%; border:0px;
+				outline:none;
+				/* outline: 클릭되어 포커스가 잡혔을 때 외곽선 설정 */
+				/* 아이디 라벨과 입력란 끝------------------------------------------------ */
+			}
+			img{
+				vertical-align:middle;
+			}
+			/* 아이디, 비밀번호 입력란의 끝 */
+		</style>
+	</head>
+	<body>
+		<div id="logo">
+			<img src="images/naver_logo.png">
+		</div>
+		<!-- 로고 끝 ----------------------------------------------------------------- -->
+		<div class="input_title">아이디</div>
+			<div class="input_text">
+				&nbsp;&nbsp; <input type="text" class="id1" size="33">&nbsp;@naver.com
+			</div>
+			<!-- 아이디---------------------------------------------------------------- -->
+			<div class="input_title">비밀번호</div>
+			<div class="input_text">
+				&nbsp;&nbsp; <input type="password" class="id1" size="39">
+				&nbsp; <img src="images/key1.png">
+			</div>
+			<div class="input_title">비밀번호 재확인</div>
+			<div class="input_text">
+				&nbsp;&nbsp; <input type="password" class="id1" size="39">
+				&nbsp; <img src="images/key2.png">
+			</div>
+	</body>
+</html>
