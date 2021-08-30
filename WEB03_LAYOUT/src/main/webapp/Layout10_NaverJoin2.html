@@ -11,14 +11,14 @@
 			.wrap{
 				position: relative;
 				margin: 0 auto;
-				width: 1100px;
+				width: 945px;
 				height: 1100px;
 				border: 1px solid black;
 				background-color: #727272;
 			}
 			.nav{
-				position: relative;
-				float:left;	
+				position: fixed;
+				top:0px;
 				width:148px; height:100%;
 				border: 1px solid black;
 				background-color: #212121;
@@ -58,8 +58,8 @@
 			}
 			/* nav 끝------------------------------------------------------------------ */
 			.section{
-				position:relative;
-				float:left;
+				position:absolute;
+				left: 168px;
 				width:775px; height:100%;
 				border: 1px solid black;
 			}
@@ -81,10 +81,41 @@
 			}
 			.select_movie{
 				position:relative;
-				
 				border: 1px solid black;
 				width:773px; height:523px;
+				background-color: #212121;
 			}
+			.movie_header{
+				position: relative;
+				width: 773px; height: 50px;
+				text-align: center;
+				line-height: 50px;
+			}
+			ul{
+				list-style: none;
+				display: inline-block;
+			}
+			li{
+				float: left;
+				margin-right: 10px;
+			}
+			li a{
+				color: white;
+				text-decoration: none;
+			}
+			li a:hover{
+				color:#ff5655;
+				text-decoration: underline;
+			}
+			.movie_png{
+				position: relative;
+				width: 773px; height:430px;
+			}
+			.movietable{
+				width: 678px; height:430px;
+				margin:0 auto;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -115,7 +146,59 @@
 					<button class="btn1">로그인</button>
 				</div>
 				<div class="select_movie">
-					
+					<div class="movie_header">
+						<ul>
+							<li><a href="">예매순</a></li>
+							<li><a href="">현재상영작</a></li>
+							<li><a href="">개봉예정작</a></li>
+							<li><a href="">평점순</a></li>
+							<li><a href="">박스오피스</a></li>
+							<li><a href="">다운로드순</a></li>
+						</ul>
+					</div>
+					<div class="movie_png">
+						<table class="movietable">
+							<tbody>
+								<tr>
+									<td>
+										<img src="images/naverMovie/1.png">
+									</td>
+									<td>
+										<img src="images/naverMovie/2.png">
+									</td>
+									<td>
+										<img src="images/naverMovie/3.png">
+									</td>
+									<td>
+										<img src="images/naverMovie/4.png">
+									</td>
+									<td>
+										<img src="images/naverMovie/5.png">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="images/naverMovie/6.png">
+									</td>
+									<td>
+										<img src="images/naverMovie/7.png">
+									</td>
+									<td>
+										<img src="images/naverMovie/8.png">
+									</td>
+									<td>
+										<img src="images/naverMovie/9.png">
+									</td>
+									<td>
+										<img src="images/naverMovie/10.png">
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+				<div>
+
 				</div>
 			</div>
 			
