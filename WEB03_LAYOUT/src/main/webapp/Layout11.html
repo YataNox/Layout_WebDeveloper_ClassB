@@ -12,20 +12,20 @@
 		}
 		#first{
 			position: relative;
-			width: 100%; height: 65px;
+			width: 100%; height: 64px;
 			background-color: #FAFAD4;
 			border-bottom: 1px solid silver;
 		}
 		#first .view{
 			position: relative;
-			width: 1100px; height: 65px;
+			width: 1100px; height: 64px;
 			background-color: #D4FAD5;
 			margin: 0 auto;
 		}
 		#first .view .left{
 			position: relative;
 			float: left;
-			width: 500px; height: 65px;
+			width: 500px; height: 63px;
 			border:1px dotted blue;
 			line-height: 65px;
 		}
@@ -88,7 +88,7 @@
 			float: left;
 			width: 500px; height: 68px;
 			border:1px dotted blue;
-			line-height: 70px;
+			line-height: 68px;
 			text-align: left;
 		}
 		#second .view .left ul{
@@ -135,16 +135,20 @@
 			margin: 0 auto;
 		}
 		#third .view .lbutton{
-			position: relative;	width: 50px; height: 50px; background-color:orange;
+			position: relative;	width: 50px; height: 50px;
 			float: left;
 			top: 260px;
 			border-radius: 50%;
+			background-image: url(images/ico_movie_171115.png);
+			background-position: -60px -461px;
 		}
 		#third .view .rbutton{
 			position: relative;	width: 50px; height: 50px; background-color:orange;
 			float: left;
 			top: 260px;
 			border-radius: 50%;
+			background-image: url(images/ico_movie_171115.png);
+			background-position: 0px -461px;
 		}
 		#third .view .news{
 			position: relative; width: 1100px; height: 570px; background-color:pink;
@@ -158,7 +162,6 @@
 		#third .view .news .top{
 			position: relative;
 			width: 100%; height: 270px;
-			background-color: black;
 		}
 		#third .view .news .top .newsbox{
 			position: relative;
@@ -170,10 +173,24 @@
 		#third .view .news .top .newsbox:last-child{
 			margin-right: 0;
 		}
+		#third .view .news .top .newsbox .img{
+			position: relative;
+			width: 265px; height: 148px;
+			border: 1px solid blue;
+			border-radius: 20px;
+			overflow: hidden;
+		}
+		#third .view .news .top .newsbox .title{
+			position: relative;
+			width: 245px; height: 98px;
+			border: 1px solid blue;
+			font-size: 105%; 
+			color: #565656;
+			padding: 10px;
+		}
 		#third .view .news .bottom{
 			position: relative;
 			width: 100%; height: 268px;
-			background-color: black;
 		}
 		#third .view .news .bottom .newsbox{
 			position: relative;
@@ -190,11 +207,15 @@
 			width: 265px; height: 148px;
 			border: 1px solid blue;
 			border-radius: 20px;
+			overflow: hidden;
 		}
 		#third .view .news .bottom .newsbox .title{
 			position: relative;
-			width: 265px; height: 118px;
+			width: 245px; height: 98px;
 			border: 1px solid blue;
+			font-size: 105%; 
+			color: #565656;
+			padding: 10px;
 		}
 	</style>
 </head>
@@ -245,38 +266,38 @@
 				<div class="temp"></div>
 				<div class="top">
 					<div class="newsbox">
-						<div class="img"></div>
-						<div class="title"></div>
+						<div class="img"><img src="https://img1.daumcdn.net/thumb/S264x148ht.u/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fnews%2F202108%2F31%2FNEWS1%2F20210831161332547pvdc.jpg&scode=media"></div>
+						<div class="title">"인생 걸었다"..'고끝밥' 문세윤 조세호 황제성 장재준, 82년생의...</div>
 					</div>
 					<div class="newsbox">
-						<div class="img"></div>
-						<div class="title"></div>
+						<div class="img"><img src="https://img1.daumcdn.net/thumb/S264x148ht.u/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fnews%2F202108%2F31%2Fspotvnews%2F20210831154034372says.jpg&scode=media"></div>
+						<div class="title">거미, '랄라랜드' 출격.. 초호화 코치라인업 추가</div>
 					</div>
 					<div class="newsbox">
-						<div class="img"></div>
-						<div class="title"></div>
+						<div class="img"><img src="https://img1.daumcdn.net/thumb/S264x148ht.u/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fnews%2F202108%2F31%2Fspotvnews%2F20210831151602790ryyd.jpg&scode=media"></div>
+						<div class="title">장성규, 펜트하우스3 마지막회 출현.. 시즌2 이어 두 번째</div>
 					</div>
 					<div class="newsbox">
-						<div class="img"></div>
-						<div class="title"></div>
+						<div class="img"><img src="https://img1.daumcdn.net/thumb/S264x148ht.u/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fkakaotv%2FASSET%2Fwarhol_asset%2Fvod_thumbnail%2F3dbd21dab1640a56430014cf3e4e0f61c5aeaa9d&scode=media"></div>
+						<div class="title">야 일어나... 정신 좀 차려봐! 정수정-진영 술주정...</div>
 					</div>
 				</div>
 				<div class="bottom">
 					<div class="newsbox">
-						<div class="img"></div>
-						<div class="title"></div>
+						<div class="img"><img src=""><img src="https://img1.daumcdn.net/thumb/S264x148ht.u/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fnews%2F202108%2F31%2Fspotvnews%2F20210831143410975ycnh.jpg&scode=media"></div>
+						<div class="title">이태곤, '편먹고 공처리' 출격.. 남다른 구력+예능감 기대</div>
 					</div>
 					<div class="newsbox">
-						<div class="img"></div>
-						<div class="title"></div>
+						<div class="img"><img src="https://img1.daumcdn.net/thumb/S264x148ht.u/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fnews%2F202108%2F31%2Fpoctan%2F20210831141117602nkvi.jpg&scode=media"></div>
+						<div class="title">에이핑크 오하영, 9월 깜짝 컴백,.. 컬레버 신곡 발표</div>
 					</div>
 					<div class="newsbox">
-						<div class="img"></div>
-						<div class="title"></div>
+						<div class="img"><img src="https://img1.daumcdn.net/thumb/S264x148ht.u/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fnews%2F202108%2F31%2Fstarnews%2F20210831161436823gftr.jpg&scode=media"></div>
+						<div class="title">공효진, 신예능 공공랜드 출연.. 이천희 전혜진 부부 출격..</div>
 					</div>
 					<div class="newsbox">
-						<div class="img"></div>
-						<div class="title"></div>
+						<div class="img"><img src="https://img1.daumcdn.net/thumb/S264x148ht.u/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fsection%2Foc%2Ff8848b22bb21465f9ff09f0098899278&scode=media"></div>
+						<div class="title">한 때 지겨웠지만 다시보고 싶은 그 예능</div>
 					</div>
 				</div>
 			</div>
